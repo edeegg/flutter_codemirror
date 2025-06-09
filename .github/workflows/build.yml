@@ -33,7 +33,7 @@ jobs:
           FLUTTER_ENV: ${{ secrets.FLUTTER_ENV }}
 
       - name: Build APK (debug)
-        run: flutter build apk --dart-define-from-file=.env --debug
+        run: flutter build apk --debug
         # Nenhuma variável de keystore necessária
 
       - name: Build AppBundle (unsigned)
